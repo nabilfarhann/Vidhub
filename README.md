@@ -25,7 +25,7 @@ Choose FFMPEG Static files based on your operating system, Download and replace 
 
 ***If you wish to process video or upload it to localhost folder***
 ````
-1. Go to 'includes/classes/' and rename VideoProcessor-localhost to VideoProcessor (Ovewrite)
+1. Go to 'includes/classes/' and rename 'VideoProcessor-localhost' to 'VideoProcessor' (Ovewrite)
 2. You need to create 3 folder,
   - uploads (top)
     - videos (inside uploads folder)
