@@ -1,0 +1,27 @@
+@mixin transition($value) {
+    -webkit-transition: $value;
+    -o-transition: $value;
+    transition: $value;
+}
+
+@mixin transform($value) {
+    -webkit-transform: $value;
+    -ms-transform: $value;
+    transform: $value;
+}
+
+@mixin animation($value) {
+    -webkit-animation: $value;
+    animation: $value;
+}
+
+@mixin transition-duration($time) {
+    -webkit-transition-duration: $time;
+    -o-transition-duration: $time;
+    transition-duration: $time;
+}
+
+@mixin box-shadow($content) {
+    -webkit-box-shadow: $content;
+    box-shadow: $content;
+}

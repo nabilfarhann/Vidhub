@@ -1,0 +1,292 @@
+.single-widget {
+    position: relative;
+    z-index: 1;
+    border: 1px solid $border;
+    border-radius: 3px;
+    padding: 40px 30px;
+
+    @media #{$breakpoint-md} {
+        padding: 30px 20px;
+    }
+
+    @media #{$breakpoint-xs} {
+        padding: 30px 20px;
+    }
+}
+
+.followers-widget {
+    @include display-flex(flex);
+    @include justify-content-between;
+
+    a {
+        width: 85px;
+        display: inline-block;
+        height: auto;
+        padding: 15px 5px;
+        background-color: $primary;
+        color: $white;
+
+        @media #{$breakpoint-lg} {
+            width: 70px;
+        }
+
+        @media #{$breakpoint-md} {
+            width: 65px;
+        }
+
+        @media #{$breakpoint-xs} {
+            width: 70px;
+        }
+
+        &.facebook {
+            background-color: #39579a;
+        }
+
+        &.twitter {
+            background-color: #55acee;
+        }
+
+        &.google {
+            background-color: #dd4b39;
+        }
+
+        i,
+        span {
+            display: block;
+            text-align: center;
+            font-weight: 700;
+
+            @media #{$breakpoint-lg} {
+                font-size: 12px;
+            }
+
+            @media #{$breakpoint-md} {
+                font-size: 12px;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 12px;
+            }
+        }
+
+        i {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        span {
+            &.counter {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.newsletter-widget {
+    .newsletter-form {
+        position: relative;
+        z-index: 1;
+
+        input {
+            width: 100%;
+            height: 50px;
+            border: none;
+            border-radius: 0;
+            text-align: center;
+            font-size: 12px;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.single-youtube-channel {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .youtube-channel-thumbnail {
+        @include flex(0 0 110px);
+        max-width: 110px;
+        width: 110px;
+
+        @media #{$breakpoint-lg} {
+            @include flex(0 0 80px);
+            max-width: 80px;
+            width: 80px;
+        }
+
+        @media #{$breakpoint-md} {
+            @include flex(0 0 70px);
+            max-width: 70px;
+            width: 70px;
+        }
+
+        @media #{$breakpoint-xs} {
+            @include flex(0 0 80px);
+            max-width: 80px;
+            width: 80px;
+        }
+    }
+
+    .youtube-channel-content {
+        padding-left: 20px;
+
+        .channel-title {
+            text-transform: uppercase;
+            font-size: 14px;
+            color: $white;
+            margin-bottom: 8px;
+            display: block;
+
+            @media #{$breakpoint-xs} {
+                font-size: 12px;
+            }
+        }
+
+        .subscribe-btn {
+            width: 130px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            background-color: $hover;
+            border-radius: 3px;
+            padding: 0;
+            color: $white;
+            font-size: 14px;
+            font-weight: 500;
+
+            &:hover,
+            &:focus {
+                font-size: 14px;
+                font-weight: 500;
+                background-color: $dark;
+            }
+        }
+    }
+}
+
+.share-post-widget {
+    position: relative;
+    z-index: 1;
+
+    p {
+        display: block;
+        color: $white;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
+
+    a {
+        display: block;
+        width: 150px;
+        height: 40px;
+        background-color: $hover;
+        border-radius: 50px;
+        margin-bottom: 15px;
+        color: $white;
+        line-height: 40px;
+        text-align: center;
+
+        i {
+            margin-right: 10px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.facebook {
+            background-color: #4c65a8;
+        }
+
+        &.twitter {
+            background-color: #41a1f6;
+        }
+
+        &.google {
+            background-color: #f43535;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $hover;
+        }
+    }
+}
+
+.author-widget {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    .author-avatar {
+        margin: 0 auto 20px;
+        width: 120px;
+        height: 120px;
+        display: block;
+        border-radius: 50%;
+    }
+
+    .author-name {
+        display: block;
+        color: $white;
+        font-size: 18px;
+        margin-bottom: 15px;
+
+        &:hover,
+        &:focus {
+            color: $hover;
+        }
+    }
+
+    .author-social-info {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 10px;
+
+        a {
+            display: inline-block;
+            padding: 0 8px;
+        }
+    }
+
+    p {
+        color: $white;
+    }
+
+    .authors--meta-data {
+        border-top: 1px solid $border;
+
+        p {
+            @include flex(0 0 50%);
+            max-width: 50%;
+            width: 50%;
+            margin-bottom: 0;
+            padding: 30px 10px;
+            border-right: 1px solid $border;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            span {
+                font-size: 16px;
+                display: block;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.add-widget {
+    img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,27 @@
+#scrollUp {
+    background-color: $dark;
+    border-radius: 0;
+    bottom: 50px;
+    color: $white;
+    font-size: 14px;
+    height: 40px;
+    line-height: 42px;
+    right: 50px;
+    text-align: center;
+    width: 40px;
+    border-radius: 0%;
+    @include transition-duration(500ms);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+        background-color: $hover;
+        color: $white;
+    }
+    @media #{$breakpoint-xs} {
+        bottom: 30px;
+        right: 30px;
+        line-height: 32px;
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -1,0 +1,12 @@
+// Xtra Large Breakpoint
+$breakpoint-xl: 'only screen and (min-width:1200px)';
+// Large Breakpoint
+$breakpoint-lg: 'only screen and (min-width:992px) and (max-width:1199px)';
+// Medium Breakpoint
+$breakpoint-md: 'only screen and (min-width:768px) and (max-width:991px)';
+// Small Breakpoint
+$breakpoint-sm: 'only screen and (min-width:576px) and (max-width:767px)';
+// Xtra Small Breakpoint
+$breakpoint-xs: 'only screen and (max-width:767px)';
+// Xtra Small Landscape Breakpoint
+$breakpoint-xs-landscape: 'only screen and (min-width:480px) and (max-width:767px)';

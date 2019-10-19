@@ -1,0 +1,392 @@
+.top-header-area {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+
+    @media #{$breakpoint-xs} {
+        height: auto;
+    }
+
+    .breaking-news-area {
+        position: relative;
+        z-index: 1;
+
+        @media #{$breakpoint-xs} {
+            height: 50px;
+            border-bottom: 1px solid $border;
+        }
+
+        .news-title {
+            min-width: 115px;
+
+            @media #{$breakpoint-md} {
+                min-width: 100px;
+            }
+
+            @media #{$breakpoint-xs} {
+                min-width: 100px;
+            }
+
+            p {
+                margin-bottom: 0;
+                font-weight: 500;
+                color: $hover;
+                text-transform: uppercase;
+
+                @media #{$breakpoint-md} {
+                    font-size: 12px;
+                }
+
+                @media #{$breakpoint-xs} {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .ticker {
+            width: 100%;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+            padding-left: 15px;
+
+            @media #{$breakpoint-md} {
+                padding-left: 8px;
+            }
+
+            ul {
+                width: 100%;
+                position: relative;
+                z-index: 1;
+
+                li {
+                    display: none;
+                    width: 100%;
+                    font-weight: 400;
+
+                    a {
+                        display: block;
+                        color: $text;
+
+                        @media #{$breakpoint-lg} {
+                            font-size: 12px;
+                        }
+
+                        @media #{$breakpoint-md} {
+                            font-size: 11px;
+                        }
+
+                        @media #{$breakpoint-xs} {
+                            font-size: 12px;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .top-social-info {
+        position: relative;
+        z-index: 1;
+        margin-right: 15px;
+
+        a {
+            display: inline-block;
+            padding: 0 15px;
+
+            @media #{$breakpoint-lg} {
+                padding: 0 8px;
+            }
+
+            @media #{$breakpoint-md} {
+                padding: 0 5px;
+                font-size: 13px;
+            }
+
+            @media #{$breakpoint-xs} {
+                padding: 0 5px;
+                font-size: 12px;
+            }
+
+            @media #{$breakpoint-sm} {
+                padding: 0 10px;
+            }
+
+            &:hover,
+            &:focus {
+                color: $hover;
+            }
+        }
+    }
+
+    .top-search-area {
+        position: relative;
+        z-index: 1;
+
+        form {
+            position: relative;
+            z-index: 1;
+            border-left: 1px solid $border;
+            border-right: 1px solid $border;
+
+            @media #{$breakpoint-xs} {
+                border-left: none;
+                border-right: none;
+            }
+
+            input {
+                @include transition-duration(500ms);
+                width: 250px;
+                height: 50px;
+                border: none;
+                color: $text;
+                font-size: 14px;
+                font-style: italic;
+                padding: 0 20px;
+                background-color: transparent;
+
+                @media #{$breakpoint-lg} {
+                    width: 200px;
+                }
+
+                @media #{$breakpoint-md} {
+                    width: 150px;
+                }
+
+                @media #{$breakpoint-xs} {
+                    width: 115px;
+                    padding: 0;
+                }
+
+                @media #{$breakpoint-xs-landscape} {
+                    width: 230px;
+                    padding: 0;
+                }
+
+                @media #{$breakpoint-sm} {
+                    width: 260px;
+                    padding: 0;
+                }
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            button {
+                position: absolute;
+                width: auto;
+                height: 50px;
+                background-color: transparent;
+                top: 50%;
+                right: 20px;
+                font-size: 16px;
+                z-index: 99;
+                border: none;
+                cursor: pointer;
+                color: $heading;
+                padding: 0;
+                @include transform(translateY(-50%));
+
+                &:focus {
+                    box-shadow: none;
+                }
+
+                &:hover {
+                    color: $hover;
+                }
+            }
+        }
+    }
+
+    .login-btn {
+        position: relative;
+        z-index: 1;
+        padding: 0 15px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        text-align: center;
+
+        &:hover,
+        &:focus {
+            color: $hover;
+        }
+    }
+}
+
+.header-area {
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+
+    .vizew-main-menu {
+        position: relative;
+        width: 100%;
+
+        .classy-nav-container {
+            background-color: $primary;
+        }
+
+        .classy-navbar {
+            padding: 0;
+            height: 90px;
+
+            @media #{$breakpoint-lg} {
+                height: 70px;
+            }
+
+            @media #{$breakpoint-md} {
+                height: 70px;
+            }
+
+            @media #{$breakpoint-xs} {
+                height: 60px;
+            }
+
+            .nav-brand {
+                max-width: 150px;
+
+                @media #{$breakpoint-lg} {
+                    max-width: 120px;
+                }
+                
+                @media #{$breakpoint-xs} {
+                    max-width: 110px;
+                }
+            }
+
+            .classynav ul {
+                li {
+                    a {
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        color: $white;
+                        height: 90px;
+                        line-height: 90px;
+                        border-bottom: 3px solid transparent;
+
+                        @media #{$breakpoint-lg} {
+                            height: 70px;
+                            line-height: 70px;
+                            font-size: 14px;
+                        }
+
+                        @media #{$breakpoint-md} {
+                            height: 35px;
+                            line-height: 35px;
+                            font-size: 14px;
+                            background-color: $bg-body;
+                            border-bottom: none;
+                        }
+
+                        @media #{$breakpoint-xs} {
+                            height: 35px;
+                            line-height: 35px;
+                            font-size: 14px;
+                            background-color: $bg-body;
+                            border-bottom: none;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $dark;
+                            border-bottom-color: $white;
+
+                            @media #{$breakpoint-md} {
+                                color: $hover;
+                            }
+
+                            @media #{$breakpoint-xs} {
+                                color: $hover;
+                            }
+                        }
+
+                        &::after {
+                            color: $white;
+                        }
+                    }
+
+                    ul li a {
+                        text-transform: capitalize;
+                        padding: 0 20px;
+                        font-size: 14px;
+                        color: $dark;
+                        line-height: 34px;
+                        height: 35px;
+
+                        @media #{$breakpoint-md} {
+                            color: $text;
+                        }
+
+                        @media #{$breakpoint-xs} {
+                            color: $text;
+                        }
+
+                        &::after {
+                            color: $dark;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $hover;
+                        }
+                    }
+
+                    &.active {
+                        a {
+                            border-bottom-color: $white;
+
+                            @media #{$breakpoint-md} {
+                                border-bottom-color: transparent;
+                            }
+
+                            @media #{$breakpoint-xs} {
+                                border-bottom-color: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .classy-navbar-toggler .navbarToggler span {
+        background-color: $white;
+    }
+
+    .is-sticky {
+        .vizew-main-menu {
+            z-index: 9999;
+            box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+.breakpoint-on {
+    .classynav {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .classy-navbar .classy-menu {
+        background-color: #222627;
+        box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    .classynav ul li .megamenu .single-mega.cn-col-4 {
+        padding: 0;
+        border-bottom: 1px solid $border;
+    }
+
+    .classycloseIcon .cross-wrap span {
+        background: $white;
+    }
+}

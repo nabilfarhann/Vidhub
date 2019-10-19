@@ -1,0 +1,48 @@
+.section-heading {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+    text-align: center;
+
+    h4 {
+        font-weight: 700;
+        margin-bottom: 10px;
+
+        @media #{$breakpoint-xs} {
+            font-size: 20px;
+        }
+    }
+
+    .line {
+        width: 150px;
+        height: 1px;
+        background-color: #4e5152;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            width: 60px;
+            height: 2px;
+            background-color: $primary;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -30px;
+        }
+    }
+
+    &.style-2 {
+        text-align: left;
+
+        .line {
+            width: 100%;
+
+            &::after {
+                left: 0;
+                margin-left: 0;
+            }
+        }
+    }
+}

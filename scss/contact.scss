@@ -1,0 +1,48 @@
+.contact-form-area {
+    position: relative;
+    z-index: 1;
+
+    @media #{$breakpoint-xs} {
+        margin-bottom: 50px;
+    }
+
+    label {
+        color: $text;
+        font-size: 16px;
+        margin-bottom: 15px;
+
+        @media #{$breakpoint-xs} {
+            font-size: 14px;
+        }
+    }
+}
+
+.form-control {
+    position: relative;
+    z-index: 2;
+    height: 48px;
+    width: 100%;
+    background-color: $border;
+    font-size: 12px;
+    margin-bottom: 15px;
+    padding: 10px 30px;
+    color: $white;
+    @include transition-duration(500ms);
+    border: none;
+    border-radius: 0;
+
+    &:focus {
+        box-shadow: none;
+        background-color: $border;
+    }
+}
+
+select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea.form-control {
+    height: 140px;
+}

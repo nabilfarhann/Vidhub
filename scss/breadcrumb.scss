@@ -1,0 +1,61 @@
+.vizew-breadcrumb {
+    position: relative;
+    z-index: 1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .breadcrumb {
+        padding: 0;
+        margin-bottom: 0;
+        background-color: transparent;
+        border-radius: 0;
+
+        .breadcrumb-item {
+            color: $text;
+            font-size: 16px;
+            font-weight: 400;
+
+            @media #{$breakpoint-lg} {
+                font-size: 14px;
+            }
+
+            @media #{$breakpoint-md} {
+                font-size: 14px;
+            }
+
+            @media #{$breakpoint-xs} {
+                font-size: 12px;
+            }
+
+            a {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 400;
+
+                @media #{$breakpoint-lg} {
+                    font-size: 14px;
+                }
+
+                @media #{$breakpoint-md} {
+                    font-size: 14px;
+                }
+
+                @media #{$breakpoint-xs} {
+                    font-size: 12px;
+                }
+
+                &:hover,
+                &:focus {
+                    font-weight: 400;
+                    color: $hover;
+                }
+            }
+        }
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: "\f105";
+        font-family: "FontAwesome";
+        color: #fff;
+    }
+}

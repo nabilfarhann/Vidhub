@@ -1,0 +1,24 @@
+ErrorDocument 301 /index.php
+
+ErrorDocument 400 /index.php
+
+ErrorDocument 401 /index.php
+
+ErrorDocument 403 /index.php
+
+ErrorDocument 404 /index.php
+
+ErrorDocument 405 /index.php
+
+ErrorDocument 408 /index.php
+
+ErrorDocument 500 /index.php
+
+ErrorDocument 502 /index.php
+
+ErrorDocument 504 /index.php
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
