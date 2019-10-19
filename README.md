@@ -17,6 +17,8 @@ Vidhub is a video sharing website done using PHP and MySQL. This system also int
 8. Run!
 ````
 
+Check out Vidhub on heroku [Vidhub](https://vidhubs.herokuapp.com/).
+
 ***You can download latest version of FFMPEG Static file for conversion of video and to generates Thumbnail***
 ````
 ( FFMPEG available for Linux, Windows and Mac )
