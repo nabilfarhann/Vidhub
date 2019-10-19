@@ -19,7 +19,8 @@ Vidhub is a video sharing website done using PHP and MySQL. This system also int
 
 ***You can download latest version of FFMPEG Static file for conversion of video and to generates Thumbnail***
 ````
-Download FFMPEG Static files and replace it in ffmpeg folder
+( FFMPEG available for Linux, Windows and Mac )
+Choose FFMPEG Static files based on your operating system, Download and replace it in ffmpeg folder
 ````
 
 ***If you wish to process video or upload it to localhost folder***
