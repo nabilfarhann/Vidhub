@@ -26,9 +26,9 @@ Download FFMPEG Static files and replace it in ffmpeg folder
 ````
 1. Go to 'includes/classes/' and rename VideoProcessor-localhost to VideoProcessor (Ovewrite)
 2. You need to create 3 folder,
-  - uploads
-    - videos
-      - thumbnails
+  - uploads (top)
+    - videos (inside uploads folder)
+      - thumbnails (inside thumbnails folder)
 ````
 
 If you have anything to ask or would like to share your opinion, can email me:
