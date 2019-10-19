@@ -5,6 +5,8 @@ Video sharing website (YouTube clone)
 ## Description
 Vidhub is a video sharing website done using PHP and MySQL. This system also integrate with Cloudinary, Cloudinary provides a cloud-based image and video management solution. All videos that upload to Vidhub will be stored to Cloudinary.
 
+Check out [Vidhub](https://vidhubs.herokuapp.com/) on heroku.
+
 ***Instruction on usage:***
 ````
 1. Clone or download this repositories
@@ -16,8 +18,6 @@ Vidhub is a video sharing website done using PHP and MySQL. This system also int
 7. Insert unsigned uploading name and cloud name to Cloudinary widget in 'upload.php'
 8. Run!
 ````
-
-Check out Vidhub on heroku [Vidhub](https://vidhubs.herokuapp.com/).
 
 ***You can download latest version of FFMPEG Static file for conversion of video and to generates Thumbnail***
 ````
