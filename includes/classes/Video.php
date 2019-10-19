@@ -237,15 +237,20 @@ class Video{
 	public function getNewVideo(){
 		$query = $this->con->prepare("SELECT * FROM videos ORDER BY uploadDate DESC LIMIT 5");
 		$query->execute();
+		$count = $query->rowCount();
 
 		while($row = $query->fetch(PDO::FETCH_ASSOC)){
 			$datas[] = $row;
 		}
 
-		foreach($datas as $data){
-			$output = $data['title'];
-			$url = "watch?id=" . $data['id'];
-			echo "<li><a href='$url'>$output</a></li>";
+		if(!$count){
+			echo "No Video";
+		}else{
+			foreach($datas as $data){
+				$output = $data['title'];
+				$url = "watch.php?id=" . $data['id'];
+				echo "<li><a href='$url'>$output</a></li>";
+			}
 		}
 	}
 }

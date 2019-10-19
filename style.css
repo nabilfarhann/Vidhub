@@ -2633,8 +2633,6 @@ html {
  ::-webkit-scrollbar-track
 {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  -moz-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   border-radius: 10px;
   background-color:transparent;
 }
@@ -2649,8 +2647,6 @@ html {
 {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-  -moz-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   background-color: #db4437;
 }
 
@@ -2676,7 +2672,9 @@ html {
 
 .coverPhotoContainer .channelName{
   position: absolute;
-  top: calc(50% - 40px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 50px;
   color: #fff;
   text-align: center;
@@ -3084,29 +3082,5 @@ html {
     padding: 2px;
   }
 }
-
-.vizew-btns {
-  background-color: #db4437;
-  -webkit-transition-duration: 500ms;
-  -o-transition-duration: 500ms;
-  transition-duration: 500ms;
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  width: 100%;
-  height: 50px;
-  color: #ffffff;
-  border-radius: 0;
-  padding: 0 30px;
-  font-size: 16px;
-  line-height: 50px;
-  font-weight: 500;
-  text-transform: capitalize; }
-  .vizew-btn:hover, .vizew-btn:focus {
-    font-size: 16px;
-    font-weight: 500;
-    background-color: #0f1112;
-    color: #ffffff;
-    box-shadow: none; }
 
 video:focus {outline:0;}
