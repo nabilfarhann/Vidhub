@@ -41,7 +41,7 @@ if(!$usernameLoggedIn){
     <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
     <script type="text/javascript">  
     document.getElementById("upload_widget_opener").addEventListener("click", function() {
-        cloudinary.openUploadWidget({cloud_name: 'vidhub',upload_preset: 'mmhf1hdf', sources: [
+        cloudinary.openUploadWidget({cloud_name: '**Insert your cloudinary cloud name**',upload_preset: '**Insert cloudinary unsigned name', sources: [
         "local",
         "url"
     ], styles: {
