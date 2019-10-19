@@ -29,7 +29,7 @@ Choose FFMPEG Static files based on your operating system, Download and replace 
 2. You need to create 3 folder,
   - uploads (top)
     - videos (inside uploads folder)
-      - thumbnails (inside thumbnails folder)
+      - thumbnails (inside videos folder)
 ````
 
 If you have anything to ask or would like to share your opinion, can email me:
