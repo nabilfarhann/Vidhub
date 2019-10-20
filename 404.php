@@ -17,7 +17,7 @@
 	<link rel="icon" href="img/core-img/favicon.ico">
 
 	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="404style.css" />
+	<link type="text/css" rel="stylesheet" href="styles/404style.css" />
 
 </head>
 

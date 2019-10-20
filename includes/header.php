@@ -24,7 +24,7 @@ $video = new Video($con, null, $userLoggedInObj);
 
 	<link rel="icon" href="img/core-img/favicon.ico">
 
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles/style.css">
 
 </head>
 <body>
