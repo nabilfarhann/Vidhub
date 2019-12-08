@@ -2,7 +2,7 @@
 Video sharing website (YouTube clone)
 ![Vidhub](https://github.com/nabilfarhann/Vidhub/blob/master/img/Vidhub.png?raw=true)
 
-:star2::star2: Don't forget to give this repo a star! :star2::star2:
+:star2::star2: @Don't forget to give this repo a star! :star2::star2:
 
 ## Description
 Vidhub is a video sharing website done using PHP and MySQL. This system also integrate with Cloudinary, Cloudinary provides a cloud-based image and video management solution. All videos that upload to Vidhub will be stored to Cloudinary.
