@@ -48,7 +48,7 @@
 
 	<link rel="icon" href="img/core-img/favicon.ico">
 
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles/style.css">
 
 </head>
 <body>
@@ -68,7 +68,7 @@
                         
                         <form action="signUp" method="POST" enctype="multipart/form-data">
                             <div class='custom-file'>
-                                <input type='file' class='form-control' name='profileImage' accept="image/*" oninvalid="this.setCustomValidity('Profile Picture is required')" required>
+                                <input type="file" class="form-control" name="profileImage" accept="image/*" oninvalid="this.setCustomValidity('Profile Picture is required')">
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="firstName" placeholder="First Name" required autocomplete="off" value="<?php getInputValue('firstName'); ?>" 
