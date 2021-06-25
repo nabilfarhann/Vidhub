@@ -4,13 +4,13 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 /* :: 2.0 Import All CSS Plugins */
-@import url(css/bootstrap.min.css);
-@import url(css/classy-nav.css);
-@import url(css/font-awesome.min.css);
-@import url(css/themify-icons.css);
-@import url(css/owl.carousel.min.css);
-@import url(css/animate.css);
-@import url(css/magnific-popup.css);
+@import url(../css/bootstrap.min.css);
+@import url(../css/classy-nav.css);
+@import url(../css/font-awesome.min.css);
+@import url(../css/themify-icons.css);
+@import url(../css/owl.carousel.min.css);
+@import url(../css/animate.css);
+@import url(../css/magnific-popup.css);
 * {
   margin: 0;
   padding: 0; }
