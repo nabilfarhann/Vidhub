@@ -2632,7 +2632,7 @@ html {
 
  ::-webkit-scrollbar-track
 {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
   border-radius: 10px;
   background-color:transparent;
 }
@@ -2646,7 +2646,7 @@ html {
 ::-webkit-scrollbar-thumb
 {
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   background-color: #db4437;
 }
 
